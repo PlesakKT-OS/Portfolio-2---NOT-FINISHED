@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Matija Pleša - Portfolio Website</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <ion-icon
+              class="menu"
+              name="close-circle-outline"
+              onclick="closeMenu()"
+            ></ion-icon>
+          </ul>
+          <ion-icon
+            class="menu open"
+            name="menu-outline"
+            onclick="openMenu()"
+          ></ion-icon>
+        </nav>
+        <div class="header-text">
+          <p>FRONT-END DEVELOPER</p>
+          <h1>
+            Hi, I am <span> Matija Pleša </span><br />
+            from Croatia
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/svg.svg" class="about-me" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Moje ima je Matija Pleša i dolazim iz Kutine. Završio sam
+              preddiplomski studij računarstva i trenutno tražim posao kao
+              front-end-developer.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab(`skills`)">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab(`experience`)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab(`education`)">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>WEB DEVELOPMENT</span> <br />
+                  &emsp; Creating web pages
+                </li>
+                <li>
+                  <span>WEB APP DEVELOPMENT</span> <br />
+                  &emsp; Creating web applications
+                </li>
+                <li>
+                  <span>MOBILE APP DEVELOPMENT</span> <br />
+                  &emsp; Creating mobile applications
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2018-2022</span> <br />
+                  &emsp; Bachelor of Computer Science at FERIT
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <ion-icon name="crop-outline"></ion-icon>
+            <h2>Web Design</h2>
+            <p>Creating layout of web page</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h2>Web App Development</h2>
+            <p>Creating web pages</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+            <h2>Mobile App Development</h2>
+            <p>Creating mobile applications</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <a href="https://plesakkt-os.github.io/OMNIFOOD/">
+              <img src="images/work-1.png" alt="" />
+            </a>
+            <div class="layer">
+              <h3 class="web-page-title">OMNIFOOD</h3>
+            </div>
+          </div>
+          <div class="work">
+            <a href="https://plesakkt-os.github.io/OMNIFOOD/">
+              <img src="images/work-2.png" alt="" />
+            </a>
+            <div class="layer">
+              <h3 class="web-page-title">E-Store</h3>
+            </div>
+          </div>
+          <div class="work">
+            <a href="https://plesakkt-os.github.io/TO-DO-LIST-SELK/">
+              <img src="images/work-3.png" alt="" />
+            </a>
+            <div class="layer">
+              <h3 class="web-page-title">Selk To-Do</h3>
+            </div>
+          </div>
+          <div class="work">
+            <a href="https://plesakkt-os.github.io/Portfolio/">
+              <img src="images/work-4.png" alt="" />
+            </a>
+            <div class="layer">
+              <h3 class="web-page-title">Portfolio</h3>
+            </div>
+          </div>
+          <div class="work">
+            <a href="https://plesakkt-os.github.io/Quiz-App/">
+              <img src="images/work-5.png" alt="" />
+            </a>
+            <div class="layer">
+              <h3 class="web-page-title">Quiz App</h3>
+            </div>
+          </div>
+          <div class="work">
+            <a href="https://plesakkt-os.github.io/OMNIFOOD/">
+              <img src="images/work-6.png" alt="" />
+            </a>
+            <div class="layer">
+              <h3 class="web-page-title">To-Do App</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <h1 class="subtitle">Contact Me</h1>
+        <div class="row">
+          <div class="contact-left">
+            <div class="email">
+              <ion-icon name="send-outline"></ion-icon>
+              <p>mat.plesa@gmail.com</p>
+            </div>
+            <div class="email">
+              <ion-icon name="call-outline"></ion-icon>
+              <p>0996775251</p>
+            </div>
+            <div class="social-icons">
+              <a href="https://web.facebook.com/matija.plesa.9/"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/matija-ple%C5%A1a-140001202/"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+              <a href="https://web.facebook.com/matija.plesa.9/"></a>
+            </div>
+            <a class="btn" href="images/CV.pdf" download>Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                role=""
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
